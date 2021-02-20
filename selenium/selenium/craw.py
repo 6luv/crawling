@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
 
-
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-import urllib.parse 
 from urllib.parse import quote
 from urllib.parse import parse_qs, parse_qsl
+import urllib.parse 
 import urllib.request
 import time
 import csv
 import pandas as pd
 
-driver = webdriver.Chrome("C:/Users/장영아/Desktop/aaa/selenium/chromedriver")
+driver = webdriver.Chrome("C:/Users/201820969/Desktop/aaa/selenium/chromedriver.exe")
 driver.get('https://smartstore.naver.com/yelloweggmart/category/87db5aa627874111b9ac8060905a2d54?st=POPULAR&free=false&dt=IMAGE&page=1&size=40')
 
 address = driver.find_elements_by_css_selector(".-qHwcFXhj0")
